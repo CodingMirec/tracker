@@ -1,24 +1,31 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 import "./Login.css";
 
 function Login() {
   const history = useHistory();
 
+  const login = () => {
+    history.push("/");
+  };
+
+  //   const signIn = () => {
+  //     auth.signInWithPopup(provider).catch((error) => alert(error.message));
+  //   };
+
   return (
     <div className="login">
       <h1>Login</h1>
-      <Link to="/">
-        <img
-          className="login__logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png"
-          alt="amazon_logo"
-        />
-      </Link>
-      <div className="login__container">
-        <h1>Sign In</h1>
-      </div>
+      <form>
+        <input placeholder="Email Adress" name="email" type="email" />
+        <input placeholder="Password" type="password" />
+        <select>
+          <option>Remember me</option>
+        </select>
+        <Button ocClick={login}>Sign In</Button>
+      </form>
     </div>
   );
 }

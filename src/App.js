@@ -8,10 +8,8 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <h1>STH</h1>
         <Switch>
           <Route path="/login">
-            <h1>heh</h1>
             <Login />
           </Route>
           <Route path="/">
