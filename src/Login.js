@@ -21,9 +21,10 @@ function Login() {
       <form>
         <input placeholder="Email Adress" name="email" type="email" />
         <input placeholder="Password" type="password" />
-        <select>
-          <option>Remember me</option>
-        </select>
+        <label htmlFor="remember">
+          <input type="checkbox" />
+          Remember me
+        </label>
         <Button ocClick={login}>Sign In</Button>
       </form>
     </div>
