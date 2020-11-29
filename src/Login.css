@@ -4,6 +4,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.login__container {
+  background-color: rgba(65, 63, 63, 0.9);
+  padding: 4rem;
+  border-radius: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .login__form {
@@ -11,9 +21,14 @@
   flex-direction: column;
 }
 
+.login__container > .MuiSvgIcon-root {
+  padding: 15px;
+  size: 30 px;
+}
+
 .login__form__info {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .login__form__info > input {
@@ -22,4 +37,22 @@
   padding: 10px;
   background-color: transparent;
   color: white;
+}
+.login__form__account {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__form > button {
+  width: 300px;
+  background-color: #738adb;
+  color: #eff2f5;
+  font-weight: 800;
+}
+
+.login__form > button:hover {
+  background-color: rgb(40, 67, 224);
+  color: #738adb;
 }
