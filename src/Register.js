@@ -2,15 +2,15 @@ import React from "react";
 import { useHistory, Link } from "react-router-dom";
 import { Button } from "@material-ui/core";
 
-import "./Login.css";
+import "./Register.css";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import Checkbox from "@material-ui/core/Checkbox";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 
-function Login() {
+function Register() {
   const history = useHistory();
 
-  const login = () => {
+  const register = () => {
     history.push("/");
   };
 
@@ -19,28 +19,28 @@ function Login() {
   //   };
 
   return (
-    <div className="login">
-      <div className="login__container">
-        <h1>Login</h1>
+    <div className="register">
+      <div className="register__container">
+        <h1>Register</h1>
         <LockOpenIcon />
-        <form className="login__form">
-          <div className="login__form__info">
+        <form className="register__form">
+          <div className="register__form__info">
             <input placeholder="Email Adress" name="email" type="email" />
             <input placeholder="Password" type="password" />
-            <div className="login__form__account">
+            <div className="register__form__account">
               <FormControlLabel
                 value="remember"
                 control={<Checkbox color="primary" />}
                 label="Remember me"
               />
-              <Link to="/register">New Account?</Link>
+              <Link to="/login">New Account?</Link>
             </div>
           </div>
-          <Button onClick={login}>Sign In</Button>
+          <Button onClick={register}>Sign In</Button>
         </form>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default Register;
