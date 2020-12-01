@@ -1,0 +1,75 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition-delay: 9999s;
+  transition-delay: 9999s;
+}
+
+.register {
+  background: linear-gradient(to bottom right, #3b3e3f, #ebf8e1, #d6d2cd);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__container {
+  background-color: rgba(65, 63, 63, 0.9);
+  padding: 4rem;
+  border-radius: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register__container > .MuiSvgIcon-root {
+  padding: 15px;
+  size: 30 px;
+}
+
+.register__form__name > input {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(65, 63, 63, 0.9);
+}
+
+.register__form__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.register__form__info > input {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(65, 63, 63, 0.9);
+}
+
+.register__form__account {
+  padding: 10px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register__form > button {
+  width: 300px;
+  background-color: #738adb;
+  color: #eff2f5;
+  font-weight: 800;
+  margin: 10px;
+}
+
+.register__form > button:hover {
+  background-color: rgb(40, 67, 224);
+  color: #738adb;
+}

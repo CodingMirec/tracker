@@ -25,18 +25,26 @@ function Register() {
         <LockOpenIcon />
         <form className="register__form">
           <div className="register__form__info">
+            <div className="register__form__name">
+              <input placeholder="First Name" name="name" />
+              <input placeholder="Last Name" name="name" />
+            </div>
             <input placeholder="Email Adress" name="email" type="email" />
             <input placeholder="Password" type="password" />
+            <input placeholder="Confirm Password" type="password" />
             <div className="register__form__account">
               <FormControlLabel
                 value="remember"
                 control={<Checkbox color="primary" />}
                 label="Remember me"
               />
-              <Link to="/login">New Account?</Link>
+              <Link to="/login">Already registered?</Link>
             </div>
           </div>
-          <Button onClick={register}>Sign In</Button>
+          <Button onClick={register} type="submit">
+            Sign In
+          </Button>
+          <Button type="submit">Sign In With Google</Button>
         </form>
       </div>
     </div>
